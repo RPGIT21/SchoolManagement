@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th = "https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>School management</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+	
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">School Management System</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/}">HOME</a>
+      </li>
+    
+    <li class="nav-item">
+        <a class="nav-link" th:href="@{/allStudents}">Student Management</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/allTeachers}">Teacher Management</a>
+      </li>
+    </ul>
+    
+    <ul class="nav navbar-nav navbar-right">
+        <li><a th:href="registration"><span class="glyphicon glyphicon-log-in"></span> Registration</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+      <div class="item">
+        <img src="https://cusat.ac.in/images/campus/campus.jpg" alt="Image" style="width:1280px;height:500px;">      
+      </div>
+    </div>
+
+<footer class="container-fluid text-center">
+  <p>Copyrights 2021 CUSAT. All rights reserved</p>
+</footer>
+
+</body>
+</html>
